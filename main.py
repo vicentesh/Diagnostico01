@@ -1,14 +1,21 @@
+import json
+
 def mostRetweeted():
-    print("hola1")
-    
+
+    tweets = []
+    for line in open('farmers-protest-tweets-2021-03-5.json', 'r'):
+        tweets.append(json.loads(line))
+
+    print(tweets[0])
+
 def mostActiveUsers():
-    print("hola2")
+    print("funcion 2")
 
 def mostTweetsDay():
-    print("hola3")
+    print("funcion 3")
 
 def trendingTopics():
-    print("hola4")
+    print("funcion 4")
 
 # main function
 def main():
